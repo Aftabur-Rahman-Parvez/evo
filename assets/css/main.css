@@ -384,3 +384,61 @@ a.section-btn{
   text-align: right;
   padding-bottom: 55px;
 }
+.edu-name-list {
+  padding-left: 30px;
+  border-left: 2px solid #20205f;
+}
+.edu-name h4 {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+.edu-name {
+  position: relative;
+}
+.edu-name p {
+  color: #aaaabf;
+}
+.edu-name:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  left: -38px;
+  top: 10px;
+  border: 4px solid ;
+}
+.edu-name:before :nth-child(1){
+  border-color: #1573ff;
+}
+.edu-name:before :nth-child(1){
+  border-color: #16FFDB;
+}
+.edu-name:before :nth-child(1){
+  border-color: #BAFF26;
+}
+.edu-year-list {
+  margin-top: 30px;
+}
+.edu-year h4 {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.edu-year p {
+  color: #aaaabf;
+  font-size: 15px;
+}
+.edu-year-1 h4{
+  color:#1573FF;
+}
+.edu-year-2 h4{
+  color:#16FFDB;
+}
+.edu-year-3 h4{
+  color:#BAFF26;
+}
