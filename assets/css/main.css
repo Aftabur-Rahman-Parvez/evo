@@ -462,3 +462,140 @@ a.section-btn{
   border-radius: 50%;
   line-height: 25px;
 }
+
+/* experience */
+.experience-item {
+  padding: 45px;
+  background-image: url("../img/bg.jpg");
+  margin-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.experience-icon {
+  position: relative;
+  display: table;
+}
+.experience-icon i {
+  width: 80px;
+  background: #fff;
+  height: 80px;
+  font-size: 40px;
+  color: #6928d9;
+  line-height: 80px;
+  text-align: center;
+  display: table-cell;
+}
+.experience-item h4 {
+  font-size: 29px;
+  color: #060630;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+.experience-item span {
+  font-size: 16px;
+  color: #9498a9;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.experience-item p {
+  color: #9498a9;
+}
+.experience-item:before{
+  position: absolute;
+  content: "";
+  height: 70px;
+  width: 70px;
+  left: -8px;
+  top: -8px;
+  border-top: 8px solid #16FFDB;
+  border-left: 8px solid #16FFDB;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.experience-item.active:before{
+  opacity: 1;
+}
+.experience-item.active:after{
+  opacity: 1;
+}
+.experience-item:after {
+  position: absolute;
+  content: "";
+  height: 70px;
+  width: 70px;
+  right: -8px;
+  bottom: -8px;
+  border-bottom: 8px solid #1573FF;
+  border-right: 8px solid #1573FF;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.experience-item:hover:before,.experience-item:hover:after {
+  opacity: 1;
+}
+.experience-item.active h4{
+  color:#6928d9;
+}
+.experience-item:hover h4{
+  color:#6928d9;
+}
+
+/* service */
+.service {
+  background: #060630;
+}
+.service .section-title span {
+  color: #00FFA2;
+}
+.service .section-title h3 {
+  color: #fff;
+}
+.service .section-title {
+  text-align: left;
+}
+.service-item {
+  margin-top:40px;
+}
+.service-item img{}
+.service-item h4{
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 18px 0;
+}
+.service-item p{
+  color: #aaaabf;
+}
+
+/* team */
+.team{
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team-item-img {
+  position: relative;
+  height:430px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.team-img-1{
+  background-image: url("../img/01.jpg");
+}
+.team-hover {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -40px;
+}
