@@ -124,10 +124,12 @@ ul {
   background:#000;
   visibility:hidden;
   opacity:0;
+
 }
 .offcanvus-menu-overlay.active{
   visibility:visible;
   opacity:.2;
+
 }
 .offcanvus-menu{
   position: fixed;
@@ -138,11 +140,13 @@ ul {
   overflow-y: scroll;
   background: #6B28D8;
   padding: 35px;
+  display: none;
 
 }
 .offcanvus-menu.active{
   right:0%;
   z-index: 99;
+  display: block;
 }
 .person-info {
   text-align: center;
@@ -387,6 +391,7 @@ a.section-btn{
 .edu-name-list {
   padding-left: 30px;
   border-left: 2px solid #20205f;
+  position: relative;
 }
 .edu-name h4 {
   color: #fff;
@@ -412,13 +417,13 @@ a.section-btn{
   top: 10px;
   border: 4px solid ;
 }
-.edu-name:before :nth-child(1){
+.edu-name:nth-child(1):before{
   border-color: #1573ff;
 }
-.edu-name:before :nth-child(1){
+.edu-name:nth-child(2):before{
   border-color: #16FFDB;
 }
-.edu-name:before :nth-child(1){
+.edu-name:nth-child(3):before{
   border-color: #BAFF26;
 }
 .edu-year-list {
@@ -426,8 +431,8 @@ a.section-btn{
 }
 .edu-year h4 {
   font-size: 35px;
-  margin-top: 30px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 .edu-year p {
   color: #aaaabf;
@@ -441,4 +446,19 @@ a.section-btn{
 }
 .edu-year-3 h4{
   color:#BAFF26;
+}
+.edu-name-list:after {
+  position: absolute;
+  content: "+";
+  background: #1573FF;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  bottom: 0px;
+  border-radius: 50%;
+  line-height: 25px;
 }

@@ -20,5 +20,13 @@
 }
 /* SM Device: 550px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
+   
+}
+@media (max-width: 767px){
+   .pr-115 {
+      padding-right: 15px;
+   }
+   .pl-210 {
+      padding-left: 15px;
+   }
 }
