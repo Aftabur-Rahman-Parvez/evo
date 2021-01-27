@@ -379,3 +379,8 @@ a.section-btn{
   top: 60%;
   color: #8787a2;
 }
+
+.edu-year {
+  text-align: right;
+  padding-bottom: 55px;
+}
