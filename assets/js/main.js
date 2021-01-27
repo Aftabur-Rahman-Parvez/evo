@@ -30,5 +30,35 @@
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('.percentage').html(Math.round(73 * progress) + '<i>%</i>');
     });
+    $('#development-progress').circleProgress({
+        value: 0.85,
+        size: 200,
+        thickness:10,
+        fill:"#1573FF",
+        startAngle:-1.60,
+        emptyFill:"#15154C",
+    }).on('circle-animation-progress', function(event, progress) {
+        $(this).find('.percentage').html(Math.round(85 * progress) + '<i>%</i>');
+    });
+    $('#branding-progress').circleProgress({
+        value: 0.48,
+        size: 200,
+        thickness:10,
+        fill:"#16FFDB",
+        startAngle:-1.60,
+        emptyFill:"#15154C",
+    }).on('circle-animation-progress', function(event, progress) {
+        $(this).find('.percentage').html(Math.round(48 * progress) + '<i>%</i>');
+    });
+    $('#product-design-progress').circleProgress({
+        value: 0.69,
+        size: 200,
+        thickness:10,
+        fill:"#BAFF26",
+        startAngle:-1.60,
+        emptyFill:"#15154C",
+    }).on('circle-animation-progress', function(event, progress) {
+        $(this).find('.percentage').html(Math.round(69 * progress) + '<i>%</i>');
+    });
 
 })(jQuery);
