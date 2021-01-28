@@ -61,4 +61,22 @@
         $(this).find('.percentage').html(Math.round(69 * progress) + '<i>%</i>');
     });
 
+     // Owl-Carousel
+     $('.sponsor').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
 })(jQuery);
