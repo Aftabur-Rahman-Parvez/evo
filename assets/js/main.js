@@ -79,4 +79,27 @@
         }
     });
 
+    // Isotope-Filtering
+
+    var $grid = $('.portfolio-grid').isotope({
+        itemSelector: '.portfolio-item',
+        percentPosition: true,
+        masonry: {
+            columnWidth: 1
+        }
+    });
+    // filter items on button click
+    $('.portfolio-menu').on('click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+
+    // active JS
+    $('.portfolio-menu li').on('click', function() {
+        $('li').removeClass('active');
+        $(this).addClass('active')
+    });
+
 })(jQuery);
