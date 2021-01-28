@@ -32,4 +32,7 @@
    .author-details h1 {
       font-size: 60px;
   }
+  .footer-left {
+      padding-bottom: 30px;
+   }
 }

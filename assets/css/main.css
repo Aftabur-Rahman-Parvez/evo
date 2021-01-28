@@ -99,7 +99,7 @@ ul {
   right:0;
   top:0;
   padding:50px 0px;
-  z-index: 1;
+  z-index: 10;
   transition: .8s;
 }
 .top-header.neel{
@@ -882,4 +882,63 @@ footer{}
   color: #fff;
   padding: 5px 15px;
   text-transform: capitalize;
+}
+
+.footer-bottom {
+  background: #5C20C3;
+  padding: 50px 0px 30px 0px;
+}
+.footer-subscribe button.btn {
+  background: #6A29D9;
+  color: #fff;
+}
+.footer-subscribe input{
+  height:50px;
+}
+.footer-right {
+  margin-left: 15px;
+}
+.footer-right h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.footer-left p {
+  font-size: 16px;
+  color: #fff;
+}
+.footer-left p a {
+  color: #fff;
+}
+.footer-social {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.footer-social a {
+  border: 2px solid #8d63d5;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-social a.active {
+  background: #6A29D9;
+  border-color: #6A29D9;
+}
+.footer-social a:hover {
+  background: #6A29D9;
+  border-color: #6A29D9;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
